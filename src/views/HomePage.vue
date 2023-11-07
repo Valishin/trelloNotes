@@ -6,7 +6,7 @@ import CButton from '../components/buttons/CButton.vue'
     const newList = ref(false)
 </script>
 <template>
-    <CList :isAdd="newList">
+    <CList :is-add="newList">
         <template #default>
             <CButton label="Añadir otra lista" @click="newList = true" />
         </template>

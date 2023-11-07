@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import CButton from '../buttons/CButton.vue';
 import CInput from '../forms/CInput.vue';
 
 const props = defineProps<{
@@ -7,13 +8,13 @@ const props = defineProps<{
 
 </script>
 <template>
-    {{ isAdd }}
     <div class="c-list">
-        <div>
+        <div >
             <slot/>
         </div>
         <div>
             <CInput vertical type="text" label="Introduzca el título"/>
+            <CButton primary/>
         </div>
     </div>
 </template>
